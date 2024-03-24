@@ -1,5 +1,12 @@
 import app from "./index.js";
+import connectDB from "./db/connectDB.js";
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Server running on port 3000");
-});
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT || 3000, () => {
+      console.log(`Server running on port ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log("Error: ", err);
+  });
