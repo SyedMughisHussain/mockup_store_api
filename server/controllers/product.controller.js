@@ -49,11 +49,11 @@ const getProduct = async (req, res) => {
 
 const createProduct = async (req, res) => {
   try {
-    const product = await Product.create(req.body);
+    const { title, price, description, image, category, rating } = req.body;
     res.status(201).json({
       status: "success",
       message: "Product created successfully",
-      data: product,
+      data: { title, price, description, image, category, rating },
     });
   } catch (error) {
     res.status(500).json({
