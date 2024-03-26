@@ -23,7 +23,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    avatar: {
+    address: {
         type: String,
         required: true,
     }
