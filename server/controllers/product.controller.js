@@ -2,21 +2,28 @@ import Product from "../models/product.model.js";
 
 const getProducts = async (req, res) => {
   try {
-    if (req.query.limit) {
-      const products = await Product.find({}).limit(req.query.limit);
-      res.status(200).json({
-        status: "success",
-        results: products.length,
-        data: products,
-      });
-    } else {
-      const products = await Product.find({}).select("-_id");
-      res.status(200).json({
-        status: "success",
-        results: products.length,
-        data: products,
-      });
+    const queryObj = { ...req.query };
+    const excludedFields = ["page", "sort", "limit", "fields"];
+    excludedFields.forEach((field) => delete queryObj[field]);
+
+    const queryStr = JSON.stringify(queryObj);
+
+    let query = Product.find(JSON.parse(queryStr)).select("-_id");
+
+    if (req.query.sort) {
+      query = query.sort(req.query.sort);
     }
+
+    if (req.query.limit) {
+      const limitValue = req.query.limit * 1;
+      query = query.limit(limitValue);
+    }
+    const products = await query;
+    res.status(200).json({
+      status: "success",
+      results: products.length,
+      data: products,
+    });
   } catch (error) {
     res.status(500).json({
       status: "error",
@@ -55,5 +62,6 @@ const createProduct = async (req, res) => {
     });
   }
 };
+
 
 export { getProducts, createProduct, getProduct };
