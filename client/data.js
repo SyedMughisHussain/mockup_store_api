@@ -101,6 +101,7 @@ export const categories = [
     {
         id: "1",
         name: "Electronics",
+        image: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg",
         createdAt: "2024-03-26T11:24:06.612Z",
         updatedAt: "2024-03-26T11:24:06.612Z",
         __v: 0,
@@ -108,6 +109,7 @@ export const categories = [
     {
         id: "2",
         name: "Appliances",
+        image: "https://images.pexels.com/photos/1271940/pexels-photo-1271940.jpeg",
         createdAt: "2024-03-26T11:27:00.968Z",
         updatedAt: "2024-03-26T11:27:00.968Z",
         __v: 0,
@@ -115,6 +117,7 @@ export const categories = [
     {
         id: "3",
         name: "Fashion",
+        image: "https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg",
         createdAt: "2024-03-26T11:27:00.968Z",
         updatedAt: "2024-03-26T11:27:00.968Z",
         __v: 0,
@@ -122,6 +125,7 @@ export const categories = [
     {
         id: "4",
         name: "Sports",
+        image: "https://images.pexels.com/photos/6740819/pexels-photo-6740819.jpeg",
         createdAt: "2024-03-26T11:27:00.968Z",
         updatedAt: "2024-03-26T11:27:00.968Z",
         __v: 0,
@@ -129,15 +133,42 @@ export const categories = [
     {
         id: "5",
         name: "Health",
+        image: "https://images.pexels.com/photos/5125690/pexels-photo-5125690.jpeg",
         createdAt: "2024-03-26T11:27:00.968Z",
         updatedAt: "2024-03-26T11:27:00.968Z",
         __v: 0,
-    }, 
-    {
-        id: "6",
-        name: "Home",
-        createdAt: "2024-03-26T11:27:00.968Z",
-        updatedAt: "2024-03-26T11:27:00.968Z",
-        __v: 0,
-    },  
+    }
 ] 
+
+export const users = [
+    {
+        id: 1,
+        email: "john@mail.com",
+        password: "changeme",
+        name: "Jhon",
+        role: "customer",
+        avatar: "https://i.imgur.com/LDOO4Qs.jpg",
+        creationAt: "2024-04-02T11:53:26.000Z",
+        updatedAt: "2024-04-02T11:53:26.000Z"
+    },
+    {
+        id: 2,
+        email: "maria@mail.com",
+        password: "12345",
+        name: "Maria",
+        role: "customer",
+        avatar: "https://i.imgur.com/DTfowdu.jpg",
+        creationAt: "2024-04-02T11:53:26.000Z",
+        updatedAt: "2024-04-02T11:53:26.000Z"
+    },
+    {
+        id: 3,
+        email: "admin@mail.com",
+        password: "admin123",
+        name: "Admin",
+        role: "admin",
+        avatar: "https://i.imgur.com/yhW6Yw1.jpg",
+        creationAt: "2024-04-02T11:53:26.000Z",
+        updatedAt: "2024-04-02T11:53:26.000Z"
+    }
+];
