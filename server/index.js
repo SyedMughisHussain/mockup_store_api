@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors';
 import dotenv from 'dotenv';
+import connectDB from './db/connectDB.js';
 
 import productRoutes from "./routes/product.routes.js"
 import categoriesRoutes from "./routes/categories.routes.js"
@@ -22,4 +23,14 @@ app.use('/api/v1/categories', categoriesRoutes)
 app.use('/api/v1/users', userRoutes)
 app.use('/api/v1/auth/login', authUser)
 
-export default app;
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT || 3000, () => {
+      console.log(`Server running on port ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log("Error: ", err);
+  });
+
+
