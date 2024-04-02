@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./db/connectDB.js";
+import Product from "./models/product.model.js";
 
 import productRoutes from "./routes/product.routes.js";
 import categoriesRoutes from "./routes/categories.routes.js";
@@ -19,9 +20,11 @@ app.use(express.json());
 app.use(cors());
 // app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+  const products = await Product.find({});
   res.json({
-    message: "Hello World!",
+    status: "success",
+    data: products
   });
 });
 app.use("/api/v1/products", productRoutes);
