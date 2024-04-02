@@ -41,6 +41,90 @@ app.get("/api/v1/hello", (req, res) => {
             password: "<PASSWORD>",
             role: "customer",
             address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
+        },
+        {
+            name: "<NAME>",
+            email: "<EMAIL>",
+            password: "<PASSWORD>",
+            role: "customer",
+            address: "123 Main St, San Francisco, CA 94103, USA"
         }
       ]
     });
