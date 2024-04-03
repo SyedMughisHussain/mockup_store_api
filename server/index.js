@@ -20,11 +20,9 @@ app.use(express.json());
 app.use(cors());
 // app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 
-app.get("/", async (req, res) => {
-  const products = await Product.find({});
+app.get("/", (req, res) => {
   res.json({
     status: "success",
-    data: products
   });
 });
 app.use("/api/v1/products", productRoutes);
