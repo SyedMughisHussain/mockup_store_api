@@ -1,17 +1,15 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 
 const Content = () => {
   return (
     <div>
-        <Routes>
-            <Route path="/" element={<div>Hello</div>} />    
-            <Route path="/Dashboard" element={<div>Dashboard</div>} />    
-            <Route path="/contact" element={<div>Contact</div>} />    
-            <Route path="/signIn" element={<div>Signin</div>} />    
-            <Route path="/signOut" element={<div>Signout</div>} />    
-        </Routes> 
+      <Routes>
+        <Route path="/" element={<div>About</div>} />
+        <Route path="/restApi" element={<div>Rest Api</div>} />
+        <Route path="/resources" element={<div>Resources</div>} />
+      </Routes>
     </div>
-    )
-}
+  );
+};
 
-export default Content
+export default Content;
