@@ -11,10 +11,10 @@ const Docs = () => {
         <div className="p-10">
           <ul>
             <li className="font-bold text-[20px] p-2 text-[#0099FF]">
-              <a href="#hsjdhs">Products</a>
+              <a href="#mughis9">Products</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Get All Products</a>
+              <a href="">Get All Products</a>
             </li>
             <li className="p-2 text-[#0099FF]">
               <a href="./hsjdhs">Get a Single Product </a>
@@ -97,7 +97,19 @@ const Docs = () => {
           </ul>
         </div>
       </div>
-      <Content />
+      <div
+       style={{ maxHeight: "calc(100vh - 100px)", overflowY: "auto" }} 
+      className="py-5 w-full">
+        <Content id={"mughis1"} />
+        <Content id={"mughis2"} />
+        <Content id={"mughis3"} />
+        <Content id={"mughis4"} />
+        <Content id={"mughis5"} />
+        <Content id={"mughis6"} />
+        <Content id={"mughis"} />
+        <Content id={"mughis"} />
+        <Content id={"mughis9"} />
+      </div>
     </div>
   );
 };

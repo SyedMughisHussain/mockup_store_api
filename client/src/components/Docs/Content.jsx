@@ -1,8 +1,8 @@
 
-const Content = () => {
+const Content = ({id}) => {
   return (
-    <div>
-        <h1>Hello world</h1>
+    <div id={id}>
+        <h1 className="text-6xl">Hello world</h1>
     </div>
   );
 };
