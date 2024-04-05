@@ -1,11 +1,12 @@
-import Content from "../../components/Docs/Content";
+import Introduction from "../../components/Docs/Introduction.";
 import { Divider } from "antd";
+import GetAllProducts from "../../components/Docs/GetAllProducts";
 
 const Docs = () => {
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
       <div
-        className="hidden md:block w-52"
+        className="hidden md:block w-72"
         style={{ maxHeight: "calc(100vh - 100px)", overflowY: "auto" }}
       >
         <div className="p-10">
@@ -99,16 +100,9 @@ const Docs = () => {
       </div>
       <div
        style={{ maxHeight: "calc(100vh - 100px)", overflowY: "auto" }} 
-      className="py-5 w-full">
-        <Content id={"mughis1"} />
-        <Content id={"mughis2"} />
-        <Content id={"mughis3"} />
-        <Content id={"mughis4"} />
-        <Content id={"mughis5"} />
-        <Content id={"mughis6"} />
-        <Content id={"mughis"} />
-        <Content id={"mughis"} />
-        <Content id={"mughis9"} />
+      className="py-5 px-10 w-full">
+        <Introduction id={"introduction"} />
+        <GetAllProducts id={"getAllProducts"} />
       </div>
     </div>
   );
