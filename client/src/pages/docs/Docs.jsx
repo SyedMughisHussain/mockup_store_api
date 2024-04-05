@@ -1,6 +1,11 @@
 import Introduction from "../../components/Docs/Introduction.";
 import { Divider } from "antd";
-import GetAllProducts from "../../components/Docs/GetAllProducts";
+import Products from "../../components/Docs/Products";
+import GetProducts from "../../components/Docs/GetProducts";
+import GetSingleProduct from "../../components/Docs/GetSingleProducts";
+import AddNewProduct from "../../components/Docs/AddNewProduct";
+import UpdateAProduct from "../../components/Docs/UpdateAProduct";
+import DeleteAProduct from "../../components/Docs/DeleteAProduct";
 
 const Docs = () => {
   return (
@@ -102,7 +107,12 @@ const Docs = () => {
        style={{ maxHeight: "calc(100vh - 100px)", overflowY: "auto" }} 
       className="py-5 px-10 w-full">
         <Introduction id={"introduction"} />
-        <GetAllProducts id={"getAllProducts"} />
+        <Products id={"products"} />
+        <GetProducts id={"getProducts"} />
+        <GetSingleProduct id={"getSingleProduct"} />
+        <AddNewProduct id={"addNewProduct"} />
+        <UpdateAProduct id={"updateAProduct"} />
+        <DeleteAProduct id={"deleteAProduct"} />
       </div>
     </div>
   );
