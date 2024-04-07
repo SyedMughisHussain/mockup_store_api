@@ -12,6 +12,10 @@ import SortProducts from "../../components/Docs/SortProducts";
 import GetCategories from "../../components/Docs/GetCategories";
 import GetProductsByCategory from "../../components/Docs/GetProductsByCategory";
 import Users from "../../components/Docs/Users";
+import GetUsers from "../../components/Docs/GetAllUsers";
+import GetSingleUser from "../../components/Docs/GetSingleUser";
+import LimitUsers from "../../components/Docs/LimitUsers";
+import SortUsers from "../../components/Docs/SortUsers";
 
 const Docs = () => {
   return (
@@ -126,6 +130,10 @@ const Docs = () => {
         <GetCategories id="getCategories" />
         <GetProductsByCategory id="getProductsByCategory" />
         <Users id="users" />
+        <GetUsers id="getUsers" />
+        <GetSingleUser id="getSingleUser" />
+        <LimitUsers id="limitUsers" />
+        <SortUsers id="sortUsers" />
       </div>
     </div>
   );
