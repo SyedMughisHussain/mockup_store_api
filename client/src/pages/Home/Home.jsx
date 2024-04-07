@@ -3,6 +3,7 @@ import GetProducts from "../../components/Home/GetProducts";
 import ShowCategories from "../../components/Home/GetCategories";
 import GetUsers from "../../components/Home/GetUsers";
 import Features from "../../components/Home/Features";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <div className="md:mx-10">
         <Features />
       </div>
+      <Footer />
     </>
   );
 };
