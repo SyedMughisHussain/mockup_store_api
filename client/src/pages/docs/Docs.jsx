@@ -16,6 +16,11 @@ import GetUsers from "../../components/Docs/GetAllUsers";
 import GetSingleUser from "../../components/Docs/GetSingleUser";
 import LimitUsers from "../../components/Docs/LimitUsers";
 import SortUsers from "../../components/Docs/SortUsers";
+import AddNewUser from "../../components/Docs/AddNewUser";
+import UpdateAUser from "../../components/Docs/UpdateAUser";
+import DeleteAUser from "../../components/Docs/DeleteAUser";
+import Login from "../../components/Docs/Login";
+import LoginUser from "../../components/Docs/LoginUser";
 
 const Docs = () => {
   return (
@@ -74,28 +79,28 @@ const Docs = () => {
           />
           <ul>
             <li className="font-bold text-[20px] p-2 text-[#0099FF]">
-              <a href="#hsjdhs">Users</a>
+              <a href="#users">Users</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Get All Users</a>
+              <a href="#getUsers">Get All Users</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Get a Single User</a>
+              <a href="#getSingleUser">Get a Single User</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Limit Results</a>
+              <a href="#limitUsers">Limit Results</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Sort Results</a>
+              <a href="#sortUsers">Sort Results</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Add a new User</a>
+              <a href="#addNewUser">Add a new User</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Update a User</a>
+              <a href="#updateAUser">Update a User</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Delete a User</a>
+              <a href="#deleteAUser">Delete a User</a>
             </li>
           </ul>
           <Divider
@@ -105,10 +110,10 @@ const Docs = () => {
           />
           <ul>
             <li className="font-bold text-[20px] p-2 text-[#0099FF]">
-              <a href="#hsjdhs">Login</a>
+              <a href="#login">Login</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">User Auth</a>
+              <a href="#loginUser">User Auth</a>
             </li>
           </ul>
         </div>
@@ -134,6 +139,11 @@ const Docs = () => {
         <GetSingleUser id="getSingleUser" />
         <LimitUsers id="limitUsers" />
         <SortUsers id="sortUsers" />
+        <AddNewUser id="addNewUser" />
+        <UpdateAUser id="updateAUser" />
+        <DeleteAUser id="deleteAUser" />
+        <Login id="login" /> 
+        <LoginUser id="loginUser" />
       </div>
     </div>
   );
