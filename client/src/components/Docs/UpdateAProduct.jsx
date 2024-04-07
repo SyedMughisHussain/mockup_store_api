@@ -40,7 +40,7 @@ const UpdateAProduct
       <p className="py-5 font-bold">Request:</p>
       <div className="px-3 py-3 w-[800px] bg-gray-100 text-[18px]">
         <p>
-          [POST] https://mockupstoreapi.cyclic.app/api/v1/products <br /> # Body
+          [PATCH] https://mockupstoreapi.cyclic.app/api/v1/products <br /> # Body
         </p>
         <pre>
           <code>{requestJsonData}</code>

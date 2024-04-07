@@ -1,9 +1,9 @@
 import { Divider } from "antd"
 
-const Products = ({id}) => {
+const Categories = ({id}) => {
   return (
     <div id={id} className="py-10">
-        <h1 className="font-bold text-4xl">Products</h1>
+        <h1 className="font-bold text-4xl">Categories</h1>
         <Divider style={{
           color: "black"
         }}/>        
@@ -11,4 +11,4 @@ const Products = ({id}) => {
   );
 };
 
-export default Products;
+export default Categories;

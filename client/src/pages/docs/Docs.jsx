@@ -6,6 +6,12 @@ import GetSingleProduct from "../../components/Docs/GetSingleProducts";
 import AddNewProduct from "../../components/Docs/AddNewProduct";
 import UpdateAProduct from "../../components/Docs/UpdateAProduct";
 import DeleteAProduct from "../../components/Docs/DeleteAProduct";
+import Categories from "../../components/Docs/Categories";
+import LimitProducts from "../../components/Docs/LimitProducts";
+import SortProducts from "../../components/Docs/SortProducts";
+import GetCategories from "../../components/Docs/GetCategories";
+import GetProductsByCategory from "../../components/Docs/GetProductsByCategory";
+import Users from "../../components/Docs/Users";
 
 const Docs = () => {
   return (
@@ -17,28 +23,28 @@ const Docs = () => {
         <div className="p-10">
           <ul>
             <li className="font-bold text-[20px] p-2 text-[#0099FF]">
-              <a href="#mughis9">Products</a>
+              <a href="#products">Products</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="">Get All Products</a>
+              <a href="#getProducts">Get All Products</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Get a Single Product </a>
+              <a href="#getSingleProduct">Get a Single Product </a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Limit Results</a>
+              <a href="#limitResults">Limit Results</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Sort Results</a>
+              <a href="#sortResults">Sort Results</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Add New Product</a>
+              <a href="#addNewProduct">Add New Product</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Update a Product</a>
+              <a href="#updateAProduct">Update a Product</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Delete a Product</a>
+              <a href="#deleteAProduct">Delete a Product</a>
             </li>
           </ul>
           <Divider
@@ -48,13 +54,13 @@ const Docs = () => {
           />
           <ul>
             <li className="font-bold text-[20px] p-2 text-[#0099FF]">
-              <a href="#hsjdhs">Categories</a>
+              <a href="#categories">Categories</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Get All Categories</a>
+              <a href="#getCategories">Get All Categories</a>
             </li>
             <li className="p-2 text-[#0099FF]">
-              <a href="./hsjdhs">Get in Category </a>
+              <a href="#getProductsByCategory">Get in Category </a>
             </li>
           </ul>
           <Divider
@@ -104,15 +110,22 @@ const Docs = () => {
         </div>
       </div>
       <div
-       style={{ maxHeight: "calc(100vh - 100px)", overflowY: "auto" }} 
-      className="py-5 px-10 w-full">
-        <Introduction id={"introduction"} />
-        <Products id={"products"} />
-        <GetProducts id={"getProducts"} />
-        <GetSingleProduct id={"getSingleProduct"} />
-        <AddNewProduct id={"addNewProduct"} />
-        <UpdateAProduct id={"updateAProduct"} />
-        <DeleteAProduct id={"deleteAProduct"} />
+        style={{ maxHeight: "calc(100vh - 100px)", overflowY: "auto" }}
+        className="py-5 px-10 w-full"
+      >
+        <Introduction id="introduction" />
+        <Products id="products" />
+        <GetProducts id="getProducts" />
+        <GetSingleProduct id="getSingleProduct" />
+        <LimitProducts id="limitResults" />
+        <SortProducts id="sortResults" />
+        <AddNewProduct id="addNewProduct" />
+        <UpdateAProduct id="updateAProduct" />
+        <DeleteAProduct id="deleteAProduct" />
+        <Categories id="categories" />
+        <GetCategories id="getCategories" />
+        <GetProductsByCategory id="getProductsByCategory" />
+        <Users id="users" />
       </div>
     </div>
   );

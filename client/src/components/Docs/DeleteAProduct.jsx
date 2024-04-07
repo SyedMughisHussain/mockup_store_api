@@ -33,7 +33,7 @@ const DeleteAProduct = ({ id }) => {
       </p>
       <p className="py-5 font-bold">Request:</p>
       <div className="px-3 py-3 w-[800px] bg-gray-100 text-[18px]">
-        <p>[GET] https://mockupstoreapi.cyclic.app/api/v1/products/5</p>
+        <p>[DELETE] https://mockupstoreapi.cyclic.app/api/v1/products/5</p>
       </div>
       <p className="py-5 font-bold">Response:</p>
       <div className="px-3 py-3 w-[800px] bg-gray-100 ">
