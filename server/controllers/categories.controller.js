@@ -2,7 +2,7 @@ import Product from "../models/product.model.js";
 
 const getCategories = async (req, res) => {
   try {
-    const categories = await Product.distinct("category");
+    const categories = await Product.distinct("category").select("-_id");
     res.status(200).json({
       status: "success",
       data: categories,

@@ -18,9 +18,7 @@ const login = async (req, res) => {
     const token = generateAccessToken(email);
     res.status(200).json({
       status: "success",
-      email,
-      password,
-      token,
+      accessToken: token
     });
   } catch (error) {
     res.status(400).json({

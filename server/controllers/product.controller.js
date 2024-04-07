@@ -34,7 +34,7 @@ const getProducts = async (req, res) => {
 
 const getProduct = async (req, res) => {
   try {
-    const product = await Product.find({ id: req.params.id });
+    const product = await Product.find({ id: req.params.id }).select("-_id");
     res.status(200).json({
       status: "success",
       data: product,
